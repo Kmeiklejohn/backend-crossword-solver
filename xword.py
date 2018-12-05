@@ -14,15 +14,15 @@ def main():
 
     pattern = r'[a-z]'
     test_word = raw_input(
-        'Please enter a word to solve.\nUse spaces to signify unknown letters: ').lower()
-        
-    replace_word = test_word.replace(' ',pattern)
-    
+        'Please enter a word to solve.\nUse spaces to signify unknown letters:'
+        ).lower()
+    replace_word = test_word.replace(' ', pattern)
 
     for word in words:
         if re.search(replace_word, word):
             if len(test_word) == len(word):
                 print word
-           
+
+
 if __name__ == '__main__':
     main()
