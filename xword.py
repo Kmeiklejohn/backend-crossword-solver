@@ -15,7 +15,7 @@ def main():
     pattern = r'[a-z]'
     test_word = raw_input(
         'Please enter a word to solve.\nUse spaces to signify unknown letters:'
-        ).lower()
+    ).lower()
     replace_word = test_word.replace(' ', pattern)
 
     for word in words:
